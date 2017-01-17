@@ -1,0 +1,43 @@
+.menu_cnt
+	height: 70px
+	min-width: 700px
+	box-shadow: 0px 0px 10px 0 rgba(0,0,0, .5)
+	background-color: $tasks_bg_color
+	position: fixed
+	z-index: 2
+	width: 75%
+	margin-left: 25%
+
+	@media (max-width: 1220px)
+		width: calc(100% - 300px)
+		margin-left: 300px
+
+.search_cnt
+	display: inline-block
+	width: calc(100% - 70px)
+	padding: 20px 20px
+	height: 100%
+	min-width: 630px
+
+.search_cnt_inner
+	width: 630px
+
+.search_field
+	vertical-align: top
+	display: inline-block
+
+	input
+		color: white
+		background-color: $projects_bg_color
+		border-radius: 6px
+		width: 560px
+		font-size: 16px
+		// opacity: .5
+
+.search_btn
+	display: inline-block
+	margin: 0px 10px
+
+.projects_menu_btn
+	display: inline-block
+	padding: 20px

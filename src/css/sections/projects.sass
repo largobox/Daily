@@ -1,0 +1,107 @@
+.projects_cnt
+	height: 100vh
+	width: 25%
+	min-width: 300px
+	background-color: $projects_bg_color
+	vertical-align: top
+	display: inline-block
+	position: fixed
+	color: $projects_text_color
+
+a
+	color: $projects_text_color
+
+.projects_cnt_inner
+	float: right
+	width: 300px
+	padding: 0px 10px
+
+	ul
+		font-size: 18px
+
+		li
+			margin-bottom: 10px
+			padding: 5px 10px
+
+			&:hover
+				cursor: pointer
+				background-color: $btn_color
+				transition: .3s
+
+.profile_cnt
+	text-align: center
+	padding: 20px 0px 30px
+	
+	img
+		+size(100px)
+		border-radius: 50%
+		border: 2px solid $projects_text_color
+		padding: 3px
+
+	p
+		font-size: 20px
+
+.project_add_cnt
+	padding-bottom: 30px
+
+	input
+		width: 220px
+
+.project_add_el
+	height: 30px
+	display: inline-block
+	vertical-align: top
+
+.project_add_el:nth-child(2)
+	padding-left: 10px
+
+// EDIT FORM
+
+.project_edit_cnt
+	width: 360px
+	margin: 100px auto 0px
+	box-shadow: 1px 1px 8px 0px rgba(0,0,0, .5)
+	// border-radius: 8px
+
+.project_edit_header
+	width: 100%
+	background-color: $projects_bg_color
+	height: 40px
+	padding: 5px 10px
+	// border-top-left-radius: 8px
+	// border-top-right-radius: 8px
+
+	span
+		font-size: 18px
+		color: $projects_text_color
+		line-height: 30px
+		display: inline-block
+		vertical-align: top
+
+	a
+		float: right
+
+.project_edit_body
+	width: 100%
+	text-align: center
+	padding: 30px 0px 40px
+
+	label
+		margin-right: 10px
+
+	input
+		border: 1px solid $projects_bg_color
+		border-right: none
+
+	button
+		border: none
+		outline: none
+		height: 32px
+		padding: 5px 16px
+		background-color: $btn_color
+		color: $projects_text_color
+		opacity: .9
+
+		&:hover
+			cursor: pointer
+			opacity: 1

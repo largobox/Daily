@@ -1,0 +1,79 @@
+$tasks_bg_color: #f7f7f7
+$tasks_text_color: #212121
+$projects_bg_color: #292c33
+$projects_text_color: #f7f7f7
+$task_header_color: #b3bbcb
+$btn_color: #6b6b99
+
+@mixin size($x) 
+	width: $x
+	height: $x
+
+@import 'sections/animation'
+@import 'sections/menu_bar'
+@import 'sections/project_menu'
+@import 'sections/notifications'
+@import 'sections/projects'
+@import 'sections/tasks'
+
+
+html, body
+	overflow-x: hidden
+	// overflow-y: hidden
+
+html, body, h1, h2, p, ul, li
+	padding: 0px
+	margin: 0px
+
+ul
+	list-style-type: none
+
+div
+	box-sizing: border-box
+
+object, a
+	+size(30px)
+
+input
+	border: none
+	outline: none
+	padding: 5px 10px
+	height: 20px
+
+a
+	text-decoration: none
+
+a:hover
+	cursor: pointer
+
+a.svg_hlp
+  position: relative
+  display: inline-block
+  opacity: .55
+
+  &:hover
+  	opacity: 1
+
+a.svg_hlp:after
+  content: ""
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+.app_cnt
+	background-color: $projects_bg_color
+	min-width: 950px
+
+.content_cnt
+	margin-left: 25%
+	width: 75%
+	background-color: $tasks_bg_color
+	min-height: 100vh
+	height: 100%
+	padding-top: 70px
+
+	@media (max-width: 1220px)
+		width: calc(100% - 300px)
+		margin-left: 300px

@@ -1,0 +1,122 @@
+.tasks_cnt_inner
+	width: 650px
+	padding: 10px 10px 0px
+	margin: auto
+	position: relative
+
+.tasks_list_cnt
+	display: inline-block
+	width: 100%
+
+	ul
+
+		li
+			width: 100%
+			margin-bottom: 14px
+
+.task_header
+	padding: 30px 10px 8px
+	color: $task_header_color
+
+.task_body
+	height: 50px
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0, .3)
+
+.task_solve_btn_cnt
+	display: inline-block
+	padding: 16px 30px
+
+
+.task_solve_btn
+	border: 2px solid $task_header_color
+	border-radius: 50%
+	+size(18px)
+
+	&:hover
+		cursor: pointer
+
+	&:active
+		background-color: $task_header_color
+		transition: .2s
+
+.task_desc
+	font-size: 18px
+	color: $tasks_text_color
+	padding-left: 30px
+	vertical-align: top
+	height: 100%
+	width: calc(100% - 78px)
+	line-height: 50px
+	display: inline-block
+
+
+.task_add_btn
+	display: inline-block
+	width: 50px
+	height: 50px
+	background-color: pink
+	position: fixed
+	bottom: 0
+	margin-bottom: 40px
+	padding: 10px
+	background-color: $btn_color
+	border-radius: 50%
+	margin-left: 10px
+
+	@media (min-width: 1100px)
+		margin-left: calc((75% - 750px)/2 - 15px)
+
+
+// TASKS ADD FORM
+
+.task_add_cnt
+	width: 360px
+	margin: 100px auto 0px
+	box-shadow: 1px 1px 8px 0px rgba(0,0,0, .5)
+
+.task_add_header
+	width: 100%
+	background-color: $projects_bg_color
+	height: 40px
+	padding: 5px 10px
+
+	span
+		font-size: 18px
+		color: $projects_text_color
+		line-height: 30px
+		display: inline-block
+		vertical-align: top
+
+	a
+		float: right
+
+.task_add_body
+	width: 100%
+	padding: 30px 40px 40px
+
+	label
+		margin-right: 10px
+		width: 60px
+		display: inline-block
+
+	input
+		border: 1px solid $projects_bg_color
+		width: 180px
+
+	button
+		border: none
+		outline: none
+		height: 32px
+		padding: 5px 16px
+		background-color: $btn_color
+		color: $projects_text_color
+		opacity: .9
+		margin-left: 217px
+
+		&:hover
+			cursor: pointer
+			opacity: 1
+
+.task_add_field
+	width: 100%
+	margin-bottom: 10px
